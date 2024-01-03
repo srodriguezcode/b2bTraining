@@ -1,0 +1,108 @@
+# env and custom build
+/env/private/
+junk/
+
+# hybris suite
+/hybris/*
+!/hybris/bin/
+/hybris/bin/*
+!/hybris/bin/custom/
+
+# Customize
+!/hybris/config/
+/hybris/config/*
+!/hybris/config/customize/
+
+/installer/
+
+# gradle
+/build/
+/.gradle/
+/buildSrc/.gradle/
+/buildSrc/build/
+
+########################################################################################
+
+# ignore other config stuff
+*.log
+*.orig
+*.sublime-*
+*.swp
+*~
+.DS_Store
+.hg/
+.metadata/*
+.sass-cache
+
+###########################################################################################################
+#**/*.class
+**/hmc/bin
+**/jalo/
+**/beans.xsd
+**/items.xsd
+**/extensioninfo.xsd
+**/hmc.xsd
+**/gensrc
+**/classes
+**/.checkstyle
+**/.ruleset
+**/bin/**/build.xml
+**/platformhome.properties
+**/eclipsebin
+**/.metadata
+**/rebel-remote.xml
+**/rebel.xml
+wro_addons.xml
+**/ruleset.xml
+**/*testclasses.xml
+**/testclasses/
+*.build.number
+#  storefronts and addon instalees
+**/web/addonsrc/
+**/web/addontestsrc/
+**/web/commonwebsrc
+**/web/webroot/addons.min.css/_ui/addons/
+**/web/webroot/_ui/addons/
+**/web/webroot/WEB-INF/views/addons/
+**/web/webroot/WEB-INF/messages/addons
+**/web/webroot/WEB-INF/tags/addons
+**/web/webroot/WEB-INF/tld/addons
+**/web/webroot/WEB-INF/_ui-src/addons
+**/web/webroot/WEB-INF/cache/addons
+
+# Backoffice & cockpits
+**/web/webroot/cmscockpit
+**/web/webroot/cockpit
+**/*_bof.jar
+
+# idea
+velocity.log
+*.iws
+*.eml
+*.iml
+
+*.bak
+.idea/
+out/
+
+.gradletasknamecache
+
+######################
+# UI generated files #
+######################
+**/_ui/responsive/**/css/style.css
+**/_ui/responsive/**/fonts
+**/_ui/responsive/**/common/js
+**/generatedVariables.js
+**/generatedVariables.tag
+**/generatedVariables.less
+**/shopritesupplierscockpit/**/style.css
+
+# Custom Addons UI files
+!/hybris/bin/custom/**/acceleratoraddon/**/common/**
+
+#############################
+# Automated tests extension #
+#############################
+**/automated-tests/**/target
+

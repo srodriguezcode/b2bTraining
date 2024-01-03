@@ -1,0 +1,22 @@
+{
+  "recommendations": [
+    // Angular Language Service
+    "Angular.ng-template",
+    // Prettier - Code formatter
+    "esbenp.prettier-vscode",
+    // The ng lint command uses ESLint under the hood.
+    "dbaeumer.vscode-eslint",
+    // Modern CSS/SCSS/Less linter
+    "stylelint.vscode-stylelint",
+    //Inline HTML and CSS highlighter
+    "natewallace.angular2-inline",
+    //A more richer git support than VS Code's default one
+    "eamodio.gitlens",
+    //AI assisted IntelliSense
+    "visualstudioexptteam.vscodeintellicode",
+    //Languages support for the SAP Hybris import/export language ImpEx (unofficial)
+    "simplyroba.impex-support",
+    //Markdown linting and style checking for Visual Studio Code
+    "davidanson.vscode-markdownlint"
+  ]
+}
