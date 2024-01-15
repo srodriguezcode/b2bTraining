@@ -6,6 +6,7 @@ import { StoreModule } from "@ngrx/store";
 import { AppRoutingModule } from "@spartacus/storefront";
 import { AppComponent } from './app.component';
 import { SpartacusModule } from './spartacus/spartacus.module';
+import { MyMiniCartModule } from "./my-mini-cart/my-mini-cart.module";
 
 @NgModule({
   declarations: [
@@ -17,7 +18,8 @@ import { SpartacusModule } from './spartacus/spartacus.module';
     AppRoutingModule,
     StoreModule.forRoot({}),
     EffectsModule.forRoot([]),
-    SpartacusModule
+    SpartacusModule,
+    MyMiniCartModule
   ],
   providers: [],
   bootstrap: [AppComponent]
