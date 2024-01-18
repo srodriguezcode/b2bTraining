@@ -1,1 +1,9 @@
-<p>my-mini-cart works!</p>
+<a [routerLink]="{ cxRoute: 'cart'} | cxUrl">
+    <cx-icon [type]="iconTypes.CART"></cx-icon>
+    <span class="quantity" *ngIf="quantity$ | async as quantity">{{
+        quantity
+    }}</span>
+    <ul class="cart-preview" *ngIf="entries$ | async as entries">
+        Si hay
+    </ul>
+</a>

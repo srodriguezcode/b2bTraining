@@ -1,7 +1,9 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { MyMiniCartComponent } from './my-mini-cart.component';
-import { CmsConfig, ConfigModule } from '@spartacus/core';
+import { CmsConfig, ConfigModule, UrlModule } from '@spartacus/core';
+import { IconModule } from '@spartacus/storefront';
+import { RouterModule } from '@angular/router';
 
 
 
@@ -11,6 +13,9 @@ import { CmsConfig, ConfigModule } from '@spartacus/core';
   ],
   imports: [
     CommonModule,
+    IconModule,
+    RouterModule,
+    UrlModule,
     ConfigModule.withConfig({
       cmsComponents:{
         MiniCartComponent:{

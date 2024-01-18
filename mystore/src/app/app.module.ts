@@ -7,6 +7,9 @@ import { AppRoutingModule } from "@spartacus/storefront";
 import { AppComponent } from './app.component';
 import { SpartacusModule } from './spartacus/spartacus.module';
 import { MyMiniCartModule } from "./my-mini-cart/my-mini-cart.module";
+import { MyCartModule } from "./my-cart/my-cart.module";
+import { MyBannerModule } from "./my-banner/my-banner.module";
+import { SalesDetailModule } from "./pages/sales-detail/sales-detail.module";
 
 @NgModule({
   declarations: [
@@ -19,7 +22,10 @@ import { MyMiniCartModule } from "./my-mini-cart/my-mini-cart.module";
     StoreModule.forRoot({}),
     EffectsModule.forRoot([]),
     SpartacusModule,
-    MyMiniCartModule
+    MyMiniCartModule,
+    MyCartModule,
+    MyBannerModule,
+    SalesDetailModule
   ],
   providers: [],
   bootstrap: [AppComponent]
